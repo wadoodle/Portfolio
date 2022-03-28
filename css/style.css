@@ -24,6 +24,48 @@ body {
 }
 
 /* Navigation */
+#hamburger.inactive {
+  -webkit-animation-name: rotatecounterclockwise;
+          animation-name: rotatecounterclockwise;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+#hamburger.active {
+  -webkit-animation-name: rotateclockwise;
+          animation-name: rotateclockwise;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+@-webkit-keyframes rotatecounterclockwise {
+  100% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+}
+
+@keyframes rotatecounterclockwise {
+  100% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+}
+
+@-webkit-keyframes rotateclockwise {
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateclockwise {
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
 #hamburger:hover {
   cursor: pointer;
 }
@@ -48,7 +90,9 @@ navigation {
   position: relative;
   font-weight: 500;
   width: 80%;
+  margin: 25px auto;
   text-align: center;
+  top: -200px;
 }
 
 #nav.inactive {
@@ -73,12 +117,10 @@ navigation {
   0% {
     top: -200px;
     max-height: 0px;
-    margin: 0 auto;
   }
   100% {
     top: 0px;
     max-height: 76px;
-    margin: 25px auto;
   }
 }
 
@@ -86,12 +128,10 @@ navigation {
   0% {
     top: -200px;
     max-height: 0px;
-    margin: 0 auto;
   }
   100% {
     top: 0px;
     max-height: 76px;
-    margin: 25px auto;
   }
 }
 
@@ -99,12 +139,10 @@ navigation {
   0% {
     top: 0px;
     max-height: 76px;
-    margin: 25px auto;
   }
   100% {
     top: -200px;
     max-height: 0px;
-    margin: 0 auto;
   }
 }
 
@@ -112,12 +150,10 @@ navigation {
   0% {
     top: 0px;
     max-height: 76px;
-    margin: 25px auto;
   }
   100% {
     top: -200px;
     max-height: 0px;
-    margin: 0 auto;
   }
 }
 
@@ -125,8 +161,8 @@ navigation {
   #hamburger {
     display: none;
   }
-  #nav,
-  #nav.active {
+  #nav {
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -136,6 +172,7 @@ navigation {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 20px;
     width: 300px;
     margin: 0;
   }
