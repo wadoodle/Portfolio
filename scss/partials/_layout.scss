@@ -1,0 +1,55 @@
+@use 'components';
+@use 'abstracts';
+
+// Header
+.logo-text {
+  margin: 0 0 0 0.2em;
+  font-family: 'Work Sans', sans-serif;
+  display: inline;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: abstracts.$primary-color;
+  font-size: 18px;
+  margin-right: 1.5em;
+}
+
+a.nav-link:hover,
+a.nav-link:focus,
+a.nav-link:active {
+  color: abstracts.$grey;
+}
+
+
+// Hero
+.hero {
+  margin: 8em 0;
+  width: 400px;
+  p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  strong {
+    font-weight: 500;
+  }
+}
+
+p.hero-secondary-text {
+  margin-bottom: 1.5em;
+  color: abstracts.$accent-color;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+// section
+section {
+  margin: 8em 0;
+}
+
+// Footer
+
+
+// Forms

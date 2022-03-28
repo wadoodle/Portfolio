@@ -1,0 +1,12 @@
+@use 'partials/abstracts';
+@use 'partials/base';
+@use 'partials/components';
+@use 'partials/layout';
+
+// Projects
+.project-img {
+
+}
+.project-img:hover {
+  border: 3px solid abstracts.$red;
+}

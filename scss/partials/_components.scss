@@ -1,0 +1,36 @@
+/* reusable pieces of the site */
+@use 'abstracts';
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 35px;
+  transition-duration: 0.2s;
+  font-size: 20px;
+}
+
+.btn-primary,
+a.btn-primary {
+  font-weight: 600;
+  color: abstracts.$blue;
+  background-color: abstracts.$accent-color2;
+}
+.btn-primary:focus,
+.btn-primary:hover,
+.btn-promary:active {
+  background-color: abstracts.$yellow-light;
+  color: abstracts.$blue;
+}
+
+.btn-secondary {
+  font-weight: 500;
+  font-size: 18px;
+  color: abstracts.$primary-color;
+  background-color: abstracts.$accent-color;
+}
+.btn-secondary:focus,
+.btn-secondary:hover,
+.btn-secondary:active {
+  background-color: abstracts.$red-light;
+  color: abstracts.$primary-color;
+}

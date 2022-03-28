@@ -1,48 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Terrell Burton Portfolio">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js"></script>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
-  </style>
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Ubuntu:wght@300;500;700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="scripts/main.js" async></script>
+  <title>Terrell Burton</title>
 </head>
 
 <body>
+  <div class="container-xxl">
 
-  <navigation class="container">
-    <div id="logo">
-      <img alt="logo" src="images/logo-temp.jpg">
-      <span>tb</span>
-    </div>
-    <div id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-    <ul id="nav">
-      <li><a>Work</a></li>
-      <li><a>About</a></li>
-      <li><a>Resume</a></li>
-      <li><a>Contact</a></li>
-    </ul>
-  </navigation>
+    <!--- Header --->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+            <img alt="tb logo" src="images/logo-temp.jpg">
+            <h1 class="logo-text">tb</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <header class="container">
-    <div class="content">
-      <h1>Terrell Burton</h1>
-      <h2>Web Developer</h2>
-      <p>Hi, I'm <strong>Terrell</strong>. I'm a <strong>web developer</strong> specializing in <strong>Vue.js</strong>, based in <strong>North Carolina</strong>.</p>
-      <button>Let's Talk</button>
-    </div>
-  </header>
+    <!--- Hero Section --->
+    <section class="row">
+      <div class="col-10 mx-auto">
+        <div class="hero">
+          <h2>Terrell Burton</h2>
+          <p class="hero-secondary-text">Web Developer</p>
+          <p>Hi, I'm <strong>Terrell</strong>. I'm a <strong>web developer</strong> specializing in <strong>Vue.js</strong>, based in <strong>North Carolina</strong>.</p>
+          <a class="btn btn-primary" href="#contact">Let's Talk</a>
+        </div>
+      </div>
+    </section>
 
+    <!--- Projects Section --->
+    <section class="row">
+      <div class="col projects">
+        <h3 id="work">Projects</h3>
+
+        <!--- Row 1 --->
+        <div class="row">
+          <div class="col-12 col-lg-4 text-center mb-4">
+            <a href="#">
+              <img class="project-img img-fluid" src="https://picsum.photos/420/256" alt="Project 1">
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 text-center mb-4">
+            <a href="#">
+              <img class="project-img img-fluid" src="https://picsum.photos/420/256" alt="Project 2">
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 text-center mb-4">
+            <a href="#">
+              <img class="project-img img-fluid" src="https://picsum.photos/420/256" alt="Project 3">
+            </a>
+          </div>
+        </div>
+
+        <!--- Row 2 --->
+        <div class="row">
+          <div class="col-12 col-lg-4 text-center mb-4">
+            <a href="#">
+              <img class="project-img img-fluid" src="https://picsum.photos/420/256" alt="Project 1">
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 text-center mb-4">
+            <a href="#">
+              <img class="project-img img-fluid" src="https://picsum.photos/420/256" alt="Project 2">
+            </a>
+          </div>
+          <div class="col-12 col-lg-4 text-center mb-4">
+            <a href="#">
+              <img class="project-img img-fluid" src="https://picsum.photos/420/256" alt="Project 3">
+            </a>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a class="btn btn-secondary" href="#">View All</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <h3 id="about">About Me</h3>
+        <div class="col-md-5 text-center">
+          <img class="img-fluid mb-3" src="https://picsum.photos/420" alt="">
+        </div>
+        <div class="col-md-7">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu posuere turpis, ut fermentum nisl. Duis pellentesque aliquam aliquam. Aenean et massa vel turpis fringilla molestie eget eget nibh. Quisque porttitor ac orci eget facilisis.</p>
+          <p>Nulla lacus diam, finibus id turpis in, vehicula consectetur magna. Praesent imperdiet nulla vitae viverra condimentum. Aliquam erat volutpat. Vivamus viverra velit blandit tellus aliquam, eu condimentum leo gravida. Nam fringilla magna et lectus fermentum, vel tristique tortor bibendum.</p>
+          <p>Morbi non libero eget ligula posuere imperdiet ac non nulla. Vestibulum commodo risus at velit max</p>
+        </div>
+    </section>
+
+    <section class="row">
+      <div class="col text-center">
+        <h3>Skills & Experience</h3>
+        <p>skills here</p>
+        <p>work exp</p>
+        <div class="text-center">
+          <a class="btn btn-secondary" href="resume.html">View Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="col text-center">
+        <h3>Ready for a chat?</h3>
+        <p>I’m always up for a chat. Send a message or reach out on social media!</p>
+        <p>form here</p>
+        <div class="text-center">
+          <a class="btn btn-primary" href="resume.html">Send Message</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-
 </html>

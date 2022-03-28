@@ -1,0 +1,21 @@
+/* Variables, Mixins, etc */
+
+$white: #f8f8f8;
+$grey: darken($white, 20%);
+$yellow: #FDD777;
+$yellow-light: lighten($yellow, 10%);
+$yellow-dark: darken($yellow, 20%);
+$red: #FF474E;
+$red-light: lighten($red, 10%);
+$blue: #1C252F;
+
+$primary-color: $white;
+$accent-color: $red;
+$accent-color2: $yellow;
+$bg-color: $blue;
+
+@mixin centerAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
