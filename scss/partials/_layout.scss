@@ -53,3 +53,39 @@ section {
 
 
 // Forms
+form {
+  background-color: #131920;
+  padding: 50px;
+  border-radius: 25px;
+  border: 1px solid black;
+
+  .form-control {
+    background-color: #131920;
+    border: none;
+    color: abstracts.$white;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    padding: 0.375rem 0;
+  }
+
+  .form-control:focus {
+    background-color: #131920;
+    color: abstracts.$white;
+    outline: abstracts.$white;
+  }
+
+  .form-control::placeholder {
+    color: abstracts.$white;
+  }
+
+}
+
+@media (min-width: 992px) { 
+  form {
+    padding: 50px 150px
+  }
+}
+
+
+
+
