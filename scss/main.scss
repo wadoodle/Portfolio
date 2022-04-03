@@ -7,11 +7,40 @@
 .project-img {
 
 }
+
 .project-img:hover {
   border: 3px solid abstracts.$red;
 }
 
 // Skills
-#skills img {
-  height: 40px;
+#skills-and-experience {
+  img {
+    height: 40px;
+  }
+
+  .experience {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+
+    li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #495058;
+      height: 110px;
+      border-radius: 55px;
+
+      p {
+        margin: 0;
+      }
+
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: abstracts.$yellow;
+      }
+    }
+  }
 }
