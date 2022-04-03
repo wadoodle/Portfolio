@@ -18,13 +18,19 @@
     height: 40px;
   }
 
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: abstracts.$yellow;
+  }
+
   .experience {
-    width: 90%;
-    margin: 0 auto;
-    text-align: left;
+    padding: 0;
 
     li {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
       background-color: #495058;
@@ -34,13 +40,19 @@
       p {
         margin: 0;
       }
-
-      .circle {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        background-color: abstracts.$yellow;
-      }
     }
   }
 }
+
+@media (min-width: 768px) { 
+  #skills-and-experience .experience {
+      li {
+        flex-direction: row;
+        text-align: left;
+      }
+
+      p {
+        width: 20%;
+      }
+    }
+  }
