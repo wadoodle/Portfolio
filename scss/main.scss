@@ -4,9 +4,7 @@
 @use 'partials/layout';
 
 // Projects
-.project-img {
-
-}
+.project-img {}
 
 .project-img:hover {
   border: 3px solid abstracts.$red;
@@ -44,15 +42,47 @@
   }
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   #skills-and-experience .experience {
-      li {
-        flex-direction: row;
-        text-align: left;
-      }
+    li {
+      flex-direction: row;
+      text-align: left;
+    }
 
-      p {
-        width: 20%;
-      }
+    p {
+      width: 20%;
     }
   }
+}
+
+#lower-nav {
+  text-align: center;
+
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  a.top {
+    width: 28px;
+  }
+
+  .links a {
+    width: 100px;
+  }
+}
+
+footer {
+  margin-bottom: 50px;
+
+  .left h4 {
+    font-family: 'Libre Caslon Display', serif;
+    font-size: 72px;
+  }
+
+  p {
+    color: abstracts.$yellow;
+  }
+
+}
