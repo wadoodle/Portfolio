@@ -4,8 +4,6 @@
 @use 'partials/layout';
 
 // Projects
-.project-img {}
-
 .project-img:hover {
   border: 3px solid abstracts.$red;
 }
@@ -74,15 +72,44 @@
 }
 
 footer {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 50px;
+  text-align: center;
 
-  .left h4 {
-    font-family: 'Libre Caslon Display', serif;
-    font-size: 72px;
+  .upper {
+
+    h4 {
+      display: none;
+    }
+
+    p {
+      color: abstracts.$yellow;
+    }
   }
+}
 
-  p {
-    color: abstracts.$yellow;
+@media (min-width: 992px) {
+
+  footer {
+    text-align: left;
+
+    .upper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: end;
+
+      h4 {
+        display: block;
+        font-family: 'Libre Caslon Display', serif;
+        font-size: 72px;
+        line-height: 72px;
+        margin: 0 auto 0 0;
+      }
+
+      div {
+        margin-left: 100px;
+      }
+    }
   }
-
 }
